@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaleTrack: E-commerce Sales Tracking System</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>SaleTrack: E-commerce Sales Tracking System</h1>
+        
+        <div class="input-form">
+            <h2>Add Sale</h2>
+            <div class="form-group">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="number" id="sales-amount" placeholder="Sales Amount" required>
+                <input type="date" id="sale-date" required>
+                <input type="text" id="customer" placeholder="Customer Name" required>
+            </div>
+            <button id="submit-sale">Submit Sale</button>
+        </div>
+        
+        <h2>Sales Data</h2>
+        <div id="sales-data" class="sales-data"></div>
+        <button id="fetch-sales">Fetch Sales Data</button>
+        <button id="download-sales-csv">Download Sales Data (CSV)</button>
+        <button id="download-sales-data-pdf">Download Sales Data Report (PDF)</button>
+        
+        <h2>Sales Summary</h2>
+        <button id="fetch-summary">Show Sales Summary</button>
+        <div id="total-sales" class="sales-summary"></div>
+        <div id="top-selling" class="sales-summary"></div>
+
+        <h2>Sales Plot</h2>
+        <img id="sales-plot" src="" alt="Sales Trend" style="display:none;">
+        <button id="show-plot">Show Sales Plot</button>
+        <button id="download-sales-plot-pdf">Download Sales Plot (PDF)</button>
+    </div>
+
+    <script src="static/script/script.js"></script>
+</body>
+</html>
